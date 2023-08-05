@@ -3,10 +3,14 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-image: linear-gradient(var(--primary,#000));
+    background: linear-gradient(var(--primary),#2d384c);
+    border-radius: .4rem;
+    margin-top: 1rem;
+    box-shadow: 0px 39px 37px -25px rgba(0, 0, 0, 0.4);
+    animation: initialize 0.7s forwards;
 }
 
-.home div{
+.home div {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -19,10 +23,21 @@
     gap: 1rem 0;
 }
 
+.home-content h1 {
+    font-family: "Poppins";
+    font-weight: 600;
+    color: var(--terciary);
+    background: linear-gradient(to right, #ffffff, var(--secondary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .home-content h2 {
     font-family: "Poppins";
     font-weight: 600;
     color: var(--terciary);
+
 }
 
 .home-content a {
@@ -36,7 +51,7 @@
     padding: .8rem;
     color: var(--terciary);
     transition: 0.5s ease-in-out;
-} 
+}
 
 .home-content a span {
     color: var(--secondary);
@@ -48,11 +63,11 @@
     border-color: var(--secondary);
 }
 
+
 img {
     height: 100%;
     width: 100%;
 }
-
 
 .typing::after {
     content: "|";
@@ -82,20 +97,22 @@ img {
     }
 }
 
-@media screen and (max-width:900px){
-    .home{
+@media screen and (max-width:900px) {
+    .home {
         flex-direction: column;
     }
 }
 
-@media screen and (max-width:468px){
-    .home{
+@media screen and (max-width:468px) {
+    .home {
         flex-direction: column;
     }
-    .home-content h1{
+
+    .home-content h1 {
         font-size: 2rem;
     }
-    .home-content h2{
-        font-size: 1.1rem;
+
+    .home-content h2 {
+        font-size: 1.2rem;
     }
 }

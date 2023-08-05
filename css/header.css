@@ -2,16 +2,16 @@
 
 header {
     animation: initialize 0.7s forwards;
-    border-bottom: 1px solid #303030  ;
     padding: 1rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 header h1 {
     color: var(--secondary);
     font-size: 2.5rem;
+    font-family: "Berkshire Swash", cursive;
 }
 
 header span {
@@ -20,7 +20,7 @@ header span {
 
 header ul {
     display: flex;
-    gap: 1.9rem;
+    gap: 1.6rem;
     align-items: center;
     padding-top: 1rem;
 }
@@ -50,6 +50,7 @@ header ul li a:hover::after {
 }
 
 /* Efeito inicial */
+
 @keyframes initialize {
     from {
         opacity: 0;
@@ -66,13 +67,17 @@ header ul li a:hover::after {
 @media screen and (max-width:900px) {
     header {
         flex-direction: column;
+        padding: 2rem 0;
+    }
+    header ul li a {
+        font-size: 1.8rem;
     }
 }
 
 @media screen and (max-width:468px) {
     header h1 {
         color: var(--secondary);
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     header ul li a {

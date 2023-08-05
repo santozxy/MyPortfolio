@@ -1,6 +1,125 @@
-.about{
+.about {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: .4rem;
+    margin-top: 1rem;
+    box-shadow: 0px 39px 37px -25px rgba(0, 0, 0, 0.4);
+    animation: initialize 0.7s forwards;
+}
+
+.title-section {
+    margin: 30px 0;
+    text-align: center;
+    color: var(--terciary);
+}
+
+.title-section h1 {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 15px;
+   
+}
+
+.title-section .pointers {
+    display: flex;
+    gap: 0.7rem;
+    justify-content: center;
+}
+
+.title-section span {
+    display: block;
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+    background-color: var(--secondary);
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(94, 223, 213));
+}
+
+
+.about-content {
+    margin: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-content div {
+    flex: 1;
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+
+}
+
+.resume h1 {
+    font-weight: 500;
+    font-size: 3rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.resume h2 {
+    font-size: 2rem;
+    color: var(--terciary);
+    font-weight: 500;
+}
+
+.resume-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+
+.resume-about h2 {
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.resume img {
+    width: 60%;
+    border-radius: 0.6rem;
+}
+
+.resume-about p {
+    color: var(--quaternary);
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.resume-about span {
+    margin-right: 1rem;
+    border: 1px solid var(--secondary);
+    height: 1px;
+}
+
+.frame {
+    display: flex;
+    justify-content: center;
+    background-color: #161922;
+    width: 90%;
+    margin: 3rem;
+}
+
+.frame div {
+    flex: 1;
+}
+
+
+.skills h2 {
+    font-family: "Poppins";
+    font-weight: 600;
+    color: var(--terciary);
+    background: linear-gradient(to right, #ffffff, var(--secondary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
