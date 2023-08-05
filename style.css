@@ -47,3 +47,34 @@ a{
 img{
     width: 80%;
 }
+
+.title-section {
+    margin: 30px 0;
+    text-align: center;
+    color: var(--terciary);
+  }
+  .title-section h1 {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 15px;
+    font-family: "Berkshire Swash", cursive;
+  }
+  .title-section p {
+    color: var(--quaternary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  .title-section .pointers {
+    display: flex;
+    gap: 0.7rem;
+    justify-content: center;
+  }
+  .title-section span {
+    display: block;
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+    background-color: var(--secondary);
+  }

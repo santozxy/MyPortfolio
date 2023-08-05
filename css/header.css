@@ -2,7 +2,7 @@
 
 header {
     animation: initialize 0.7s forwards;
-    border-bottom: 1px solid var(--quaternary);
+    border-bottom: 1px solid #303030  ;
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -63,8 +63,20 @@ header ul li a:hover::after {
 }
 
 
-@media screen and (max-width:900px){
-    header{
+@media screen and (max-width:900px) {
+    header {
         flex-direction: column;
     }
+}
+
+@media screen and (max-width:468px) {
+    header h1 {
+        color: var(--secondary);
+        font-size: 2.5rem;
+    }
+
+    header ul li a {
+        font-size: 1rem;
+    }
+
 }
