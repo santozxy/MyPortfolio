@@ -1,0 +1,70 @@
+/* Header */
+
+header {
+    animation: initialize 0.7s forwards;
+    border-bottom: 1px solid var(--quaternary);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header h1 {
+    color: var(--secondary);
+    font-size: 2.5rem;
+}
+
+header span {
+    color: var(--terciary);
+}
+
+header ul {
+    display: flex;
+    gap: 1.9rem;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+header ul li a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 0;
+    width: 0;
+    color: var(--terciary);
+    font-size: 1.5rem;
+}
+
+header ul li a::after {
+    content: '';
+    height: 0;
+    width: 10px;
+    display: block;
+    border-bottom: 4px solid transparent;
+    transition: 1s;
+}
+
+header ul li a:hover::after {
+    height: 0;
+    width: 100%;
+    padding: 0;
+    border-bottom: 4px solid var(--secondary);
+}
+
+/* Efeito inicial */
+@keyframes initialize {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+@media screen and (max-width:900px){
+    header{
+        flex-direction: column;
+    }
+}
