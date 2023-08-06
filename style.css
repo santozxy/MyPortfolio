@@ -26,10 +26,10 @@ html {
 
 body {
     max-width: 1600px;
-    margin: auto;
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--primary);
+    margin:  0 auto;
 }
 
 
@@ -68,9 +68,9 @@ i {
     align-items: center;
 }
 
-
 @media screen and (max-width:1770px) {
     .social-icons{
         display: none;
+        overflow: hidden;
     }
 }

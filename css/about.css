@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     background-color: #1f212e;
-    ;
 }
 
 .title-container {
@@ -198,7 +197,7 @@
     transition: transform ease .5s;
 }
 
-.skill:hover{
+.skill:hover {
     transform: scale(1.1);
 }
 
@@ -245,8 +244,7 @@
     color: #fff;
 }
 
-
-.btn-cv .tooltip-text {
+.tooltip-text {
     visibility: hidden;
     position: absolute;
     width: 9rem;
@@ -299,9 +297,17 @@
     .resume-section p {
         font-size: 1.3rem;
     }
-    .skill{
+
+    .tab {
+        flex-direction: column-reverse;
+    }
+
+    .skill {
         width: 9rem;
         height: 9rem;
     }
 
+    .tooltip-text {
+        left: 40%;
+    }
 }
