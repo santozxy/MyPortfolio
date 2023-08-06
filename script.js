@@ -16,7 +16,7 @@ function openTab(evt, nav) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("experience").style.display = "block";
+  document.getElementById("skills").style.display = "block";
 });
 
 function typingLetter() {

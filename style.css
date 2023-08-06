@@ -60,7 +60,7 @@ i {
 .social-icons {
     position: fixed;
     top: 50%;
-    right: 20px;
+    right: 1rem;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
@@ -69,13 +69,7 @@ i {
 }
 
 
-.social-icons a {
-    margin-bottom: 1.5rem;
-    font-size: 24px;
-    color: var(--secondary);
-}
-
-@media screen and (max-width:1750px) {
+@media screen and (max-width:1770px) {
     .social-icons{
         display: none;
     }
