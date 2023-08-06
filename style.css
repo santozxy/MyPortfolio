@@ -20,6 +20,10 @@
     list-style: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     max-width: 1600px;
     margin: auto;

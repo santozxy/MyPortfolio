@@ -17,10 +17,12 @@
 
 <body>
     <header>
-        <h1>IS<span>Dev.</span></h1>
+        <a href="#" target="_blank">
+            <h1>IS<span>Dev.</span></h1>
+        </a>
         <nav>
-            <ul aria-label="Navegação Primaria">
-                <li><a href="#home">Home</a></li>
+            <ul aria-label="Navegação Primaria" class="nav">
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfólio</a></li>
@@ -40,7 +42,7 @@
         </div>
     </section>
 
-    <section class="about" aria-label="Seção sobre Monnuery">
+    <section class="about" id="about" aria-label="Seção sobre Monnuery">
 
         <div class="title-container">
             <div class="line-section"></div>
@@ -48,67 +50,106 @@
             <div class="line-section"></div>
         </div>
 
-        <div class="resume-section">
-            <p>Bem-vindo à nossa sessão de Pacotes Fotográficos! Aqui, temos uma variedade de opções para capturar
-                e preservar os momentos mais preciosos da sua vida.
-            </p>
-        </div>
+        <div class="about-content">
+
+            <div class="my-img">
+                <img src="assets/me4.png" alt="">
+            </div>
+
+            <div class="my-resume">
+                <div class="resume-section">
+                    <p>Sou um desenvolvedor Front End apaixonado por desenvolvimento. Estou sempre buscando aprender
+                        mais
+                        sobre
+                        a área da tecnologia . Com uma sede insaciável de conhecimento, estou sempre me desafiando a
+                        crescer
+                        tanto pessoalmente quanto profissionalmente.
+                    </p>
+                </div>
+
+                <div class="tab">
+                    <button class="tablinks active" onclick="openTab(event, 'experience')">Experiência</button>
+                    <button class="tablinks" onclick="openTab(event, 'skills')">Habilidades</button>
+                    <button class="tablinks" onclick="openTab(event, 'education')">Educação</button>
+                </div>
+
+                <div class="experience tabcontent" id="experience">
+                    <h2><span></span>Maio, 2023 - Atual</h2>
+                    <p>Desenvolvedor Front-End - Tribunal Regional Eleitoral do Piauí</p>
+                    <h2><span></span>Janeiro, 2023 - Atual</h2>
+                    <p>Freelancer - Criação de aplicações web e mobile para clientes</p>
+                </div>
+
+                <div class="skills tabcontent" id="skills">
+                    <h2>Skills</h2>
+                    <ul class="list-skills">
+                        <li class="skill">
+                            <img src="tools/html.svg" alt="">
+                            <div>
+                                <p>HTML</p>
+                            </div>
+                        </li>
+
+                        <li class="skill">
+                            <img src="tools/css.svg" alt="">
+                            <p>Avançado</p>
+                        </li>
+
+                        <li class="skill">
+                            <img src="tools/js.svg" alt="">
+                            <p>Avançado</p>
+                        </li>
+
+                        <li class="skill">
+                            <img src="tools/angular.svg" alt="">
+                            <p>Intermediário</p>
+                        </li>
+
+                        <li class="skill">
+                            <img src="tools/react.svg" alt="">
+                            <p>Intermediário</p>
+                        </li>
+                        <li class="skill">
+                            <img src="tools/python.svg" alt="">
+                            <p>Avançado</p>
+                        </li>
+
+                        <li class="skill">
+                            <img src="tools/ts.svg" alt="">
+                            <p>Básico</p>
+                        </li>
+                        <li class="skill">
+                            <img src="tools/java.svg" alt="">
+                            <p>Básico</p>
+                        </li>
 
 
-        <div class="skills">
-            <h2>Habilidades Profissionais</h2>
-            <ul class="list-skills">
-                <li class="skill">
-                    <img src="tools/html.svg" alt="">
-                    <div>
-                        <p>Avançado</p>
-                    </div>
-                </li>
+                        <li class="skill">
+                            <img src="tools/github.svg" alt="">
+                            <p>Avançado</p>
+                        </li>
 
-                <li class="skill">
-                    <img src="tools/css.svg" alt="">
-                    <p>Avançado</p>
-                </li>
+                        <li class="skill">
+                            <img src="tools/git.svg" alt="">
+                            <p>Intermediário</p>
+                        </li>
+                    </ul>
 
-                <li class="skill">
-                    <img src="tools/js.svg" alt="">
-                    <p>Avançado</p>
-                </li>
+                </div>
 
-                <li class="skill">
-                    <img src="tools/angular.svg" alt="">
-                    <p>Intermediário</p>
-                </li>
 
-                <li class="skill">
-                    <img src="tools/react.svg" alt="">
-                    <p>Intermediário</p>
-                </li>
-
-                <li class="skill">
-                    <img src="tools/ts.svg" alt="">
-                    <p>Básico</p>
-                </li>
-
-                <li class="skill">
-                    <img src="tools/github.svg" alt="">
-                    <p>Avançado</p>
-                </li>
-
-                <li class="skill">
-                    <img src="tools/git.svg" alt="">
-                    <p>Intermediário</p>
-                </li>
-            </ul>
-
+                <div class="education tabcontent" id="education">
+                    <h1>Educação</h1>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="portfolio">
-        <div class="title-section">
-            <h1>Portfolio</h1>
-            <div class="pointers" area-label="Seção apenas de ilustrações de botões">
-                <span></span>
-            </div>
+    <section class="portfolio" id="portfolio">
+        <div class="title-container">
+            <div class="line-section"></div>
+            <h1 class="title-section">Portfolio</h1>
+            <div class="line-section"></div>
+        </div>
     </section>
     <script src="script.js"></script>
 </body>

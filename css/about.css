@@ -3,7 +3,7 @@
     flex-direction: column;
     border-radius: .4rem;
     margin-top: 1rem;
-    animation: initialize 0.7s forwards;
+    box-shadow: 1rem  1rem 3rem rgba(0, 0, 0, 0.3);
 }
 
 .title-container {
@@ -24,6 +24,20 @@
     text-align: center;
 }
 
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.my-img{
+    padding: 1rem;
+}
+
+.my-img img{
+    border-radius: 1rem;
+    box-shadow: 22px 5px 52px 0px rgba(0, 0, 0, 0.4);
+}
+
 .resume-section {
     text-align: center;
     display: flex;
@@ -33,26 +47,62 @@
 }
 
 .resume-section p {
-    max-width: 60%;
     font-size: 2rem;
     color: #fff;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.tab button {
+    background: linear-gradient(to right, #87c1cc, var(--secondary), #688fcc);
+    border-radius: .4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: padding ease-in-out .4s, opacity ease-in .3s;
+    color: var(--terciary);
+    opacity: 0.7;
+    padding: 0.3rem 1.5rem;
+}
+
+.tab button:hover {
+    border: 1px solid var(--terciary);
+    opacity: 1;
+}
+
+.tab button.active {
+    border: 1px solid var(--terciary);
+    padding: .7rem 2rem;
+    opacity: 1;
+    box-shadow: 22px 5px 52px 4px rgba(0, 0, 0, 0.9);
+}
+
+.tabcontent {
+    display: none;
+    padding: .375rem .75rem;
+}
+
+.experience{
+    padding: 2.5rem;
 }
 
 .skills {
     margin: 1rem 0;
 }
 
-.skills h2{
-    background: linear-gradient(to right, var(--secondary),#ffffff, var(--secondary),var(--secondary));
+.skills h2 {
+    background: linear-gradient(to right, var(--secondary), #ffffff, var(--secondary), var(--secondary));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.skills p {
-    color: var(--quaternary);
-    margin-top: 1rem;
-    font-size: 1.5rem;
 }
 
 .skills span {
@@ -65,7 +115,7 @@
     display: flex;
     justify-content: space-around;
     margin-top: 2rem;
-    gap: 1rem;
+    gap: 2rem;
     flex-wrap: wrap;
 }
 
@@ -75,26 +125,36 @@
 }
 
 .skill {
+    background-color: rgb(20, 36, 45);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    border-radius: 0.4rem;
+    border-radius: 0.6rem;
+    width: 10rem;
+    height: 10rem;
+}
+
+.skill p {
+    font-size: 1.5rem;
+    color: var(--quaternary);
+    margin-top: 1rem;
 }
 
 
 @media screen and (max-width:968px) {
-    .resume h1 {
-        font-size: 2rem;
-    }
 
     .skills p {
         font-size: 1rem;
     }
 
-    .resume img {
-        width: 90%;
+    .about-content{
+        grid-template-columns: 1fr;
+    }
+    .tab button{
+        padding: 0;
+        font-size: 1rem;
     }
 
 }

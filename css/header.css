@@ -21,14 +21,14 @@ header span {
     color: var(--terciary);
 }
 
-header ul {
+.nav {
     display: flex;
     gap: 1.6rem;
     align-items: center;
     padding-top: 1rem;
 }
 
-header ul li a {
+.nav li a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 0;
     width: 0;
@@ -36,7 +36,7 @@ header ul li a {
     font-size: 1.5rem;
 }
 
-header ul li a::after {
+.nav li a::after {
     content: '';
     height: 0;
     width: 10px;
@@ -45,7 +45,15 @@ header ul li a::after {
     transition: 1s;
 }
 
-header ul li a:hover::after {
+.nav li a:hover::after {
+    height: 0;
+    width: 100%;
+    padding: 0;
+    border-bottom: 4px solid var(--secondary);
+}
+
+.nav li a.active {
+    color: var(--secondary);
     height: 0;
     width: 100%;
     padding: 0;
@@ -72,6 +80,7 @@ header ul li a:hover::after {
         flex-direction: column;
         padding: 2rem 0;
     }
+
     header ul li a {
         font-size: 1.8rem;
     }
