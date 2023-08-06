@@ -2,6 +2,5 @@
     display: flex;
     justify-content: center;
     height: 100%;
-    background: linear-gradient(#2d384c,var(--primary));
-    border-radius: .4rem;
+    background: linear-gradient(#13151d,var(--primary));
 }
