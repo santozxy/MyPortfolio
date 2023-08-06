@@ -23,7 +23,7 @@
   display: grid;
   gap: 1.9rem;
   text-align: center;
-  max-width: 25.5rem;
+  max-width: 26rem;
   height: 300px;
   background-color: var(--primary);
   border-radius: 6px;
