@@ -4,7 +4,7 @@
     align-items: center;
     height: 100%;
     animation: initialize 0.7s forwards;
-    margin-bottom: 1rem;
+    background: linear-gradient(var(--primary), #393e56);
 }
 
 .home div {
@@ -51,12 +51,10 @@
     color: var(--secondary);
 }
 
-
 .home-content a:hover {
     animation: translateY 0.8s infinite alternate;
     border-color: var(--secondary);
 }
-
 
 img {
     height: 100%;
