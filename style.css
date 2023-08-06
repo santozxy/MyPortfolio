@@ -29,7 +29,20 @@ body {
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--primary);
-    margin:  0 auto;
+    margin: 0 auto;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--primary);
+}
+
+::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+    border-radius: 1rem;
 }
 
 
@@ -69,7 +82,7 @@ i {
 }
 
 @media screen and (max-width:1770px) {
-    .social-icons{
+    .social-icons {
         display: none;
         overflow: hidden;
     }
