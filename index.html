@@ -12,7 +12,12 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="css/portfolio.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
@@ -33,7 +38,7 @@
     <section class="home" id="home" aria-label="Seção Home">
         <div class="home-content">
             <h1>Olá,<br> eu sou <br> Monnuery Junior</h1>
-            <a href="#">
+            <a>
                 <h2 class="typing">Desenvolvedor Front End e UX/UI Designer</h2>
             </a>
         </div>
@@ -53,8 +58,10 @@
         <div class="about-content">
 
             <div class="my-img">
-                <img src="assets/me4.png" alt="">
-                <button>Download CV</button>
+                <img src="assets/about.jpeg" alt="">
+                <div class="download-cv">
+                    <button></button>
+                </div>
             </div>
 
             <div class="my-resume">
@@ -72,16 +79,22 @@
                 </div>
 
                 <div class="experience tabcontent" id="experience">
-                    <h2><span></span>Maio, 2023 - Atual</h2>
-                    <p>Desenvolvedor Front-End - Tribunal Regional Eleitoral do Piauí</p>
-                    <h2><span></span>Janeiro, 2023 - Atual</h2>
-                    <p>Freelancer - Criação de aplicações web e mobile para clientes</p>
+
+                    <div class="work">
+                        <h2>Maio, 2023 - Atual</h2>
+                        <p>Desenvolvedor Front-End - Tribunal Regional Eleitoral do Piauí</p>
+                    </div>
+
+                    <div class="work">
+                        <h2>Janeiro, 2023 - Atual</h2>
+                        <p>Freelancer - Criação de aplicações web e mobile para clientes</p>
+                    </div>
                 </div>
 
                 <div class="skills tabcontent" id="skills">
-                    <h2>Skills</h2>
+                    
                     <ul class="list-skills">
-                        
+
                         <li class="skill">
                             <img src="tools/html.svg" alt="">
                         </li>
@@ -113,6 +126,14 @@
                         <li class="skill">
                             <img src="tools/java.svg" alt="">
                         </li>
+                
+                        <li class="skill">
+                            <img src="tools/ux.png" alt="">
+                        </li>
+
+                        <li class="skill">
+                            <img src="tools/ui.png" alt="">
+                        </li>
 
                         <li class="skill">
                             <img src="tools/github.svg" alt="">
@@ -125,11 +146,53 @@
 
                 </div>
 
-
                 <div class="education tabcontent" id="education">
                     <h1>Educação</h1>
                 </div>
             </div>
+        </div>
+
+    </section>
+
+    <section class="services" id="services">
+        <div class="title-container">
+            <div class="line-section"></div>
+            <h1 class="title-section">Serviços</h1>
+            <div class="line-section"></div>
+        </div>
+        <div class="my-services">
+            <ul area-label="Serviços disponíveis">
+                <li>
+                    <i class="fa-sharp fa-solid fa-pen-to-square"></i>
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, earum.</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-globe"></i>
+                    <h3>Web Developer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, earum.</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-camera"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, earum.</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h3>SEO Analyst</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, earum.</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-medal"></i>
+                    <h3>Creative Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, earum.</p>
+                </li>
+                <li>
+                    <i class="fa-sharp fa-solid fa-palette"></i>
+                    <h3>UX/UI</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, earum.</p>
+                </li>
+            </ul>
         </div>
     </section>
     <section class="portfolio" id="portfolio">
@@ -139,6 +202,17 @@
             <div class="line-section"></div>
         </div>
     </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://instagram.com" target="_blank" aria-label="Link de acesso ao instagram">
+                <i class="fa-brands fa-instagram fa-2px"></i>instagram</a>
+            <a href="https://facebook.com" target="_blank" aria-label="Link de acesso ao Facebook"><i
+                    class="fa-brands fa-facebook fa-2px"></i>Facebook</a>
+            <a href="https://twitter.com" target="_blank" aria-label="Link de acesso ao Twitter"><i
+                    class="fa-brands fa-twitter fa-2px"></i>twitter</a>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 

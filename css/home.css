@@ -54,7 +54,7 @@
 
 
 .home-content a:hover {
-    transform: scale(1.04);
+    animation: translateY 0.8s infinite alternate;
     border-color: var(--secondary);
 }
 

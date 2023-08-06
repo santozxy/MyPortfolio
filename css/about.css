@@ -27,15 +27,15 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.my-img{
+.my-img {
     padding: 1rem;
 }
 
-.my-img img{
+.my-img img {
+    width: 100%;
+    height: 100%;
     border-radius: 1rem;
     box-shadow: 22px 5px 52px 0px rgba(0, 0, 0, 0.4);
-    width: 50rem;
-    height: 50rem;
 }
 
 .resume-section {
@@ -90,8 +90,37 @@
     padding: .375rem .75rem;
 }
 
-.experience{
-    padding: 2.5rem;
+.experience {
+    padding: 2rem 1.5rem;
+}
+
+.experience h2 {
+    color: #fff;
+}
+
+.experience span {
+    display: block;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--secondary);
+}
+.work{
+    background-color: #14242d;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    box-shadow: 5px 5px 1rem rgba(0, 0, 0, 0.5);
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.work h2{
+    color: var(--secondary);
+}
+
+.work p{
+    font-size: 1.5rem;
+    color: var(--terciary);
 }
 
 .skills {
@@ -125,7 +154,7 @@
 }
 
 .skill {
-    background-color: rgb(20, 36, 45);
+    background-color: #14242d;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,12 +166,24 @@
     box-shadow: 5px 5px 1rem rgba(0, 0, 0, 0.5);
 }
 
-.skill p {
-    font-size: 1.5rem;
-    color: var(--quaternary);
-    margin-top: 1rem;
+
+.download-cv{
+    padding: 1rem;
 }
 
+.download-cv button{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background: linear-gradient(to right, var(--secondary), #ffffff, var(--secondary), var(--secondary));
+}
+
+@media screen and (max-width:1500px) {
+    .my-img img{
+        width: 100%;
+        height: 100%;
+    }
+}
 
 @media screen and (max-width:968px) {
 
@@ -150,10 +191,14 @@
         font-size: 1rem;
     }
 
-    .about-content{
+    .about-content {
         grid-template-columns: 1fr;
     }
-    .tab button{
+    .my-img img{
+        width: 100%;
+    }
+
+    .tab button {
         padding: 0;
         font-size: 1rem;
     }

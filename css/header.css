@@ -60,7 +60,7 @@ header span {
     border-bottom: 4px solid var(--secondary);
 }
 
-/* Efeito inicial */
+/* Animações */
 
 @keyframes initialize {
     from {
@@ -92,7 +92,7 @@ header span {
         font-size: 2rem;
     }
 
-    header ul li a {
+    .nav li a {
         font-size: 1rem;
     }
 
