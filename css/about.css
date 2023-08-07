@@ -132,8 +132,8 @@
 
 .tabcontent {
     display: none;
-    padding: 1rem;
 }
+
 
 .work {
     background-color: var(--primary);
