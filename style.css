@@ -81,7 +81,7 @@ i {
     align-items: center;
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
     animation: translateY .5s infinite alternate;
 }
 

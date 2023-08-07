@@ -41,7 +41,7 @@
 
 .projects {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-content: center;
     border-radius: 1rem;
@@ -53,9 +53,7 @@
     height: 100%;
 }
 
-@media screen and (max-width:1024px) {
-
-}
+@media screen and (max-width:1024px) {}
 
 @media screen and (max-width:768px) {
     .projects {
@@ -64,7 +62,7 @@
 }
 
 @media screen and (max-width:480px) {
-    
+
     .projects {
         grid-template-columns: 1fr;
     }

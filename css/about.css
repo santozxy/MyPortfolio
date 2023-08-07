@@ -279,6 +279,7 @@
         align-items: center;
         justify-content: center;
     }
+
     .my-img img {
         width: 40rem;
         height: 40rem;
@@ -291,6 +292,7 @@
     .skills p {
         font-size: 1rem;
     }
+
     .tooltip-text {
         left: 74%;
     }

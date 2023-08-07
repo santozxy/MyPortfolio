@@ -35,13 +35,11 @@ function typingLetter() {
 typingLetter();
 
 function downloadPDF() {
-  var pdfUrl = 'assets/cv.pdf';
-  var link = document.createElement('a');
+  var pdfUrl = "assets/cv.pdf";
+  var link = document.createElement("a");
   link.href = pdfUrl;
-  link.setAttribute('download', 'Currículo de Monnuery Júnior.pdf');
+  link.setAttribute("download", "Currículo de Monnuery Júnior.pdf");
   link.click();
 }
 
-document.getElementById('btn-cv').addEventListener('click', downloadPDF);
-
-
+document.getElementById("btn-cv").addEventListener("click", downloadPDF);
