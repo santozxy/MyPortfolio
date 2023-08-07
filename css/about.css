@@ -140,9 +140,10 @@
     padding: 1rem;
     border-radius: 0.6rem;
     box-shadow: inset 9px -6px 20px -3px rgba(0, 0, 0, 0.5);
-    width: 100%;
     margin-top: 2rem;
     animation: initialize 0.7s forwards;
+    display: flex;
+    justify-content: space-around;
 }
 
 .work h2 {
@@ -153,6 +154,17 @@
 .work p {
     font-size: 1.5rem;
     color: var(--terciary);
+}
+
+.list-abilities{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 150px;
+}
+.abilities img{
+    width: 2rem;
+    height: 2rem;
 }
 
 .skills {

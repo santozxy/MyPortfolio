@@ -11,7 +11,6 @@ header {
 header h1 {
     color: var(--secondary);
     font-size: 3.5rem;
-    
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

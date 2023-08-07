@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     animation: initialize 0.7s forwards;
 }
 
@@ -44,6 +43,7 @@
     padding: .8rem;
     color: var(--terciary);
     transition: 0.5s ease-in-out;
+    box-shadow: 2px 5px 1rem #000000;
 }
 
 .home-content a span {
@@ -53,6 +53,10 @@
 .home-content a:hover {
     animation: translateY 0.8s infinite alternate;
     border-color: var(--secondary);
+}
+
+.home-img {
+    padding: 2rem 0;
 }
 
 img {
