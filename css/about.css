@@ -28,9 +28,10 @@
     padding: 1rem;
 }
 
+
 .my-img img {
-    width: 52rem;
-    height: 53rem;
+    width: 40rem;
+    height: 50rem;
     border-radius: 1rem;
 }
 
@@ -40,7 +41,6 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 3rem;
-    margin-top: 2rem;
     padding: 1rem;
 }
 
@@ -71,7 +71,7 @@
     transition: padding ease-in-out .4s, opacity ease-in .3s;
     color: #fff;
     opacity: 0.7;
-    padding: 0.5rem 2rem;
+    padding: 0.6rem 2rem;
     font-weight: bold;
     width: 100%;
 }
@@ -276,13 +276,13 @@
 @media screen and (max-width:1280px) {
     .my-img {
         display: flex;
-        align-items: center;
+
         justify-content: center;
     }
 
     .my-img img {
-        width: 40rem;
-        height: 40rem;
+        width: 80%;
+        height: 80%;
     }
 
     .about-content {
