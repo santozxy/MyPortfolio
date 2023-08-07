@@ -1,5 +1,11 @@
 /* Seção de Serviços */
 
+.servies{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
 
 .my-services {
   padding: 4rem;

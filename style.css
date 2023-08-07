@@ -81,6 +81,10 @@ i {
     align-items: center;
 }
 
+.social-icons a:hover{
+    animation: translateY .5s infinite alternate;
+}
+
 @media screen and (max-width:1770px) {
     .social-icons {
         display: none;
