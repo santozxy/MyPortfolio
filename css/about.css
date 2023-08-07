@@ -28,12 +28,6 @@
     padding: 1rem;
 }
 
-.my-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .my-img img {
     width: 50rem;
     height: 53rem;
@@ -155,7 +149,7 @@
 }
 
 .work p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--terciary);
 }
 
@@ -280,6 +274,11 @@
 }
 
 @media screen and (max-width:1024px) {
+    .my-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .my-img img {
         width: 40rem;
         height: 40rem;

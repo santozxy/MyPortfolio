@@ -9,13 +9,12 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
 }
 
 .home-content {
-    padding: 0 2rem;
-    gap: 1rem 0;
+    padding: 1rem;
+    gap: 2rem 0;
 }
 
 .home-content h1 {
@@ -35,7 +34,6 @@
 .home-content a {
     cursor: default;
     display: flex;
-    gap: 5px;
     align-items: center;
     justify-content: center;
     border: 2px solid var(--terciary);
@@ -57,9 +55,12 @@
 
 .home-img {
     padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-img {
+.home-img img {
     height: 100%;
     width: 100%;
 }
@@ -93,9 +94,26 @@ img {
     }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1024px) {
+
+    .home-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-content h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+
     .home {
         flex-direction: column;
+    }
+
+    .home-img img {
+        height: 70%;
+        width: 70%;
     }
 }
 
