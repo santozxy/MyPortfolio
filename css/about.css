@@ -29,7 +29,7 @@
 }
 
 .my-img img {
-    width: 50rem;
+    width: 52rem;
     height: 53rem;
     border-radius: 1rem;
 }
@@ -56,12 +56,14 @@
     justify-content: space-around;
     gap: 1rem;
     width: 100%;
+    border-radius: .4rem;
+    box-shadow: inset 9px -6px 20px -3px rgba(0, 0, 0, 0.5);
 }
 
 .tab button {
     position: relative;
     border-radius: .4rem;
-    background-color: #15171e;
+    background-color: transparent;
     font-size: 1.7rem;
     font-weight: bold;
     border: none;
@@ -76,7 +78,6 @@
 
 .tab button:hover {
     opacity: 1;
-
 }
 
 .tab button.active {
@@ -84,7 +85,6 @@
     opacity: 1;
     border: 2px solid var(--secondary);
     background-color: #15171e;
-    box-shadow: inset 0px -6px 20px 0px rgba(0, 0, 0, 0.6);
 }
 
 .tab button::before {
@@ -131,6 +131,7 @@
     display: none;
     margin: 3rem 0;
 }
+
 
 .work {
     background-color: var(--primary);
@@ -273,7 +274,7 @@
 
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1280px) {
     .my-img {
         display: flex;
         align-items: center;
@@ -299,8 +300,8 @@
 @media screen and (max-width:768px) {
 
     .my-img img {
-        width: 100%;
-        height: 100%;
+        width: 90%;
+        height: 90%;
     }
 
     .tooltip-text {
@@ -328,6 +329,10 @@
 
     .tab {
         flex-direction: column;
+    }
+
+    .tabcontent h2 {
+        font-size: 1.4rem;
     }
 
     .skill {

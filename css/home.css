@@ -95,6 +95,10 @@
 }
 
 @media screen and (max-width:1024px) {
+    .home-img img {
+        height: 80%;
+        width: 80%;
+    }
 
     .home-content h1 {
         font-size: 2.5rem;
@@ -112,8 +116,8 @@
     }
 
     .home-img img {
-        height: 70%;
-        width: 70%;
+        height: 80%;
+        width: 80%;
     }
 }
 
