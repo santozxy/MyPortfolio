@@ -1,7 +1,6 @@
 .about {
     display: flex;
     flex-direction: column;
-    background-color: #1f212e;
 }
 
 .title-container {
@@ -33,10 +32,10 @@
 }
 
 .my-img img {
-    width: 50rem;
-    height: 58rem;
+    width: 55rem;
+    height: 55rem;
     border-radius: 1rem;
-    box-shadow: 9px -6px 20px -3px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0px -6px 20px 0px rgba(0, 0, 0, 0.6);
     z-index: 99;
 }
 
@@ -73,9 +72,11 @@
     border: none;
     cursor: pointer;
     transition: padding ease-in-out .4s, opacity ease-in .3s;
-    color: var(--terciary);
+    color: #fff;
     opacity: 0.7;
     padding: 0.5rem 2rem;
+    font-weight: bold;
+    box-shadow: inset 0px -6px 20px 0px rgba(0, 0, 0, 0.6);
 }
 
 .tab button:hover {
@@ -86,9 +87,7 @@
 .tab button.active {
     padding: .7rem 3rem;
     opacity: 1;
-    box-shadow: inset 0px -6px 20px 0px rgba(0, 0, 0, 0.6);
     border: 2px solid var(--secondary);
-
 }
 
 .tab button::before {
@@ -167,7 +166,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 
 .list-skills {
     display: flex;

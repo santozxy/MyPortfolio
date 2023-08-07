@@ -4,7 +4,6 @@
     align-items: center;
     height: 100%;
     animation: initialize 0.7s forwards;
-    background: linear-gradient(var(--primary), #393e56);
 }
 
 .home div {
