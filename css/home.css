@@ -29,9 +29,6 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.home-content a {
     cursor: default;
     display: flex;
     align-items: center;
@@ -44,11 +41,12 @@
     box-shadow: 2px 5px 1rem #000000;
 }
 
-.home-content a span {
+
+.home-content h2 span {
     color: var(--secondary);
 }
 
-.home-content a:hover {
+.home-content h2:hover {
     animation: translateY 0.8s infinite alternate;
     border-color: var(--secondary);
 }
