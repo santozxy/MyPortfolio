@@ -258,8 +258,9 @@
     left: 78%;
     padding: .5rem;
     text-align: center;
-    background-color: var(--secondary);
+    background-color: #195d6c;
     color: #fff;
+    font-weight: bold;
     opacity: 0;
     transition: opacity 0.4s;
     border-radius: 0.5rem;
@@ -270,7 +271,6 @@
     visibility: visible;
     opacity: 1;
     animation: translateY .5s infinite alternate;
-
 }
 
 @media screen and (max-width:1280px) {
