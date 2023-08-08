@@ -9,16 +9,26 @@
 }
 
 .projects {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     padding: 1rem 0.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-content: center;
     border-radius: 1rem;
     gap: 1rem;
 }
 
-.projects img {
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    box-shadow: inset 9px -3px 23px -1px rgba(0, 0, 0, 0.6);
+}
+
+
+.card img {
     border-radius: .5rem;
     transition: transform ease-in .3s;
     opacity: .8;
@@ -26,11 +36,77 @@
     width: 500px;
 }
 
-.projects img:hover {
+.card img:hover {
     transform: scale(1.04);
     opacity: 1;
 }
 
+.card-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.card i {
+    color: var(--terciary);
+    transition: transform .3s ease-in-out;
+    opacity: 0.7;
+    width: 50px;
+    height: 50px;
+}
+
+.card i:hover {
+    transform: scale(1.06);
+    opacity: 1;
+}
+
+.like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.like p{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+
+.icon-button {
+    border: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    transition: .25s ease;
+    box-shadow: 0 0 0 1px rgba(#000, .05), 0 3px 8px 0 rgba(#000, .15);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.icon-button:hover {
+    background-color: #a52a2a;
+    color: #FFF;
+    transform: scale(1.06);
+    opacity: 1;
+}
+
+svg {
+    width: 1em;
+    height: 1em;
+}
 
 
 .projects-button {
@@ -71,6 +147,7 @@
         height: 270px;
         width: 350px;
     }
+
     .projects {
         grid-template-columns: 1fr 1fr;
     }
