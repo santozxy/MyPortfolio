@@ -18,7 +18,6 @@
 }
 
 .home-content h1 {
-    font-family: "Poppins";
     font-weight: 600;
     color: var(--terciary);
     text-align: start;
@@ -92,7 +91,7 @@
 }
 
 @media screen and (max-width:1024px) {
-    .home-content{
+    .home-content {
         padding-left: 1rem;
     }
 

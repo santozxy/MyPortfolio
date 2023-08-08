@@ -28,7 +28,6 @@ header span {
 }
 
 .nav li a {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 0;
     width: 0;
     color: var(--terciary);

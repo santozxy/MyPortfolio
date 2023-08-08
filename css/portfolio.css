@@ -2,18 +2,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 2rem 0;
 }
 
 .portfolio-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .projects {
     display: grid;
-    padding: 1rem 0.5rem;
+    padding: 1rem;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     border-radius: 1rem;
     gap: 1rem;
 }
@@ -33,7 +37,7 @@
     transition: transform ease-in .3s;
     opacity: .8;
     height: 370px;
-    width: 500px;
+    width: 100%;
 }
 
 .card img:hover {
@@ -45,24 +49,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .links {
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
-.card i {
+.card-links a {
     color: var(--terciary);
     transition: transform .3s ease-in-out;
     opacity: 0.7;
     width: 50px;
     height: 50px;
+    border-radius: 100%;
+    box-shadow: 2px 3px 0.8rem #272727;
 }
 
-.card i:hover {
+.disabled {
+    color: #686868;
+}
+
+.card-links a:hover {
     transform: scale(1.06);
     opacity: 1;
 }
@@ -74,15 +84,14 @@
     gap: 1rem;
 }
 
-.like p{
+.like p {
     font-size: 1.5rem;
     color: #fff;
 }
 
-
 .icon-button {
     border: 0;
-    background-color: #fff;
+    background-color: var(--quaternary);
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
@@ -91,7 +100,6 @@
     align-items: center;
     font-size: 1.25rem;
     transition: .25s ease;
-    box-shadow: 0 0 0 1px rgba(#000, .05), 0 3px 8px 0 rgba(#000, .15);
     z-index: 1;
     cursor: pointer;
 }
@@ -108,7 +116,6 @@ svg {
     height: 1em;
 }
 
-
 .projects-button {
     display: flex;
     flex-direction: column;
@@ -117,17 +124,22 @@ svg {
 }
 
 .projects-button a {
-    margin-top: 2rem;
-    cursor: default;
+    background: linear-gradient(to right, #ffffff, var(--secondary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 25rem;
+    border: 2px solid var(--terciary);
     border-radius: 5px;
     padding: .8rem;
+    margin: 2rem 0;
+    width: 40%;
     color: var(--terciary);
     transition: 0.5s ease-in-out;
-    box-shadow: inset 9px -6px 20px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 5px 1rem #000000;
 }
 
 .projects-button a span {
@@ -139,13 +151,25 @@ svg {
     border: 1px solid var(--secondary);
 }
 
-@media screen and (max-width:1024px) {}
+@media screen and (max-width:1024px) {
+    .projects {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
 
 @media screen and (max-width:768px) {
 
+    .links a i {
+        width: 30px;
+        height: 30px;
+        margin-right: 0.2rem;
+    }
+
     .projects img {
         height: 270px;
-        width: 350px;
+        width: 100%;
+        opacity: 1;
     }
 
     .projects {
@@ -158,4 +182,14 @@ svg {
     .projects {
         grid-template-columns: 1fr;
     }
+
+    .projects-button h2 {
+        font-size: 1rem;
+    }
+
+    .projects-button a {
+        width: 80%;
+        padding: .6rem .8rem;
+    }
+
 }
