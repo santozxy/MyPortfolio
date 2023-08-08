@@ -48,31 +48,32 @@
 .card-links {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem;
 }
 
 .links {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 1.5rem;
+    padding: 1rem;
 }
 
-.card-links a {
+.links a {
     color: var(--terciary);
     transition: transform .3s ease-in-out;
     opacity: 0.7;
-    width: 50px;
-    height: 50px;
     border-radius: 100%;
-    box-shadow: 2px 3px 0.8rem #272727;
+}
+
+.links i {
+    font-size: 2.5rem;
 }
 
 .disabled {
     color: #686868;
 }
 
-.card-links a:hover {
+.links a:hover {
     transform: scale(1.06);
     opacity: 1;
 }
@@ -93,8 +94,8 @@
     border: 0;
     background-color: var(--quaternary);
     border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,15 +156,21 @@ svg {
     .projects {
         grid-template-columns: 1fr 1fr;
     }
-
 }
 
 @media screen and (max-width:768px) {
 
-    .links a i {
-        width: 30px;
-        height: 30px;
-        margin-right: 0.2rem;
+    .links{
+        padding: 0.5rem;
+    }
+
+    .links i {
+        font-size: 2.2rem;
+    }
+
+    .icon-button {
+        width: 2.2rem;
+        height: 2.2rem;
     }
 
     .projects img {

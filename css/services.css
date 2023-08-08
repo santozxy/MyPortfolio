@@ -120,7 +120,7 @@
   border: 2px solid var(--terciary);
   border-radius: 5px;
   padding: 1rem 0;
-  width: 40%;
+  width: 50%;
   color: var(--terciary);
   transition: 0.5s ease-in-out;
   box-shadow: 2px 5px 1rem #000000;
@@ -140,7 +140,7 @@
   }
 
   .contact-button a {
-    width: 80%;
+    width: 70%;
     padding: .6rem .8rem;
   }
 }
