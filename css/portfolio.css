@@ -36,8 +36,10 @@
     border-radius: .5rem;
     transition: transform ease-in .3s;
     opacity: .8;
-    height: 370px;
+    height: 400px;
     width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .card img:hover {
