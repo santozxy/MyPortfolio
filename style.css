@@ -27,7 +27,7 @@ html {
 body {
     max-width: 1600px;
     height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins';
     background-color: var(--primary);
     margin: 0 auto;
 }
