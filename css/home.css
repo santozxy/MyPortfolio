@@ -13,7 +13,7 @@
 }
 
 .home-content {
-    padding: 1rem;
+    padding-top: 1rem;
     gap: 2rem 0;
 }
 
@@ -52,7 +52,6 @@
 }
 
 .home-img {
-    padding: 2rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +59,7 @@
 
 .home-img img {
     height: 100%;
-    width: 100%;
+    width: 90%;
 }
 
 .typing::after {
@@ -93,6 +92,10 @@
 }
 
 @media screen and (max-width:1024px) {
+    .home-content{
+        padding-left: 1rem;
+    }
+
     .home-img img {
         height: 80%;
         width: 80%;
@@ -114,8 +117,8 @@
     }
 
     .home-img img {
-        height: 80%;
-        width: 80%;
+        height: 100%;
+        width: 60%;
     }
 }
 

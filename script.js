@@ -1,3 +1,4 @@
+
 function openTab(evt, nav) {
   var i, tabcontent, tablinks;
 
@@ -41,5 +42,4 @@ function downloadPDF() {
   link.setAttribute("download", "Currículo de Monnuery Júnior.pdf");
   link.click();
 }
-
 document.getElementById("btn-cv").addEventListener("click", downloadPDF);

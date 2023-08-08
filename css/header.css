@@ -75,6 +75,11 @@ header span {
 
 
 @media screen and (max-width:1024px) {
+
+    header{
+        margin-bottom: 2rem;
+    }
+
     header h1 {
         font-size: 2.7rem;
     }
