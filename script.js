@@ -43,37 +43,37 @@ function downloadPDF() {
 }
 document.getElementById("btn-cv").addEventListener("click", downloadPDF);
 
-// Contadores de curtidas
-document.addEventListener("DOMContentLoaded", function () {
-  const likeButtons = document.querySelectorAll(".button-icon");
-  const likeCountElements = document.querySelectorAll("#count-like");
+// // Contadores de curtidas
+// document.addEventListener("DOMContentLoaded", function () {
+//   const likeButtons = document.querySelectorAll(".button-icon");
+//   const likeCountElements = document.querySelectorAll("#count-like");
 
-  function initializeLikes() {
-    for (let i = 0; i < likeCountElements.length; i++) {
-      const cardId = i + 1;
-      const storedLikes = localStorage.getItem(`card${cardId}Likes`);
-      if (storedLikes === null) {
-        localStorage.setItem(`card${cardId}Likes`, "0");
-      }
-      updateLikeCountDisplay(cardId);
-    }
-  }
+//   function initializeLikes() {
+//     for (let i = 0; i < likeCountElements.length; i++) {
+//       const cardId = i + 1;
+//       const storedLikes = localStorage.getItem(`card${cardId}Likes`);
+//       if (storedLikes === null) {
+//         localStorage.setItem(`card${cardId}Likes`, "0");
+//       }
+//       updateLikeCountDisplay(cardId);
+//     }
+//   }
 
-  function incrementLikes(cardId) {
-    const currentLikes = parseInt(localStorage.getItem(`card${cardId}Likes`));
-    const newLikes = currentLikes + 1;
-    localStorage.setItem(`card${cardId}Likes`, newLikes.toString());
-    updateLikeCountDisplay(cardId);
-  }
+//   function incrementLikes(cardId) {
+//     const currentLikes = parseInt(localStorage.getItem(`card${cardId}Likes`));
+//     const newLikes = currentLikes + 1;
+//     localStorage.setItem(`card${cardId}Likes`, newLikes.toString());
+//     updateLikeCountDisplay(cardId);
+//   }
 
-  function updateLikeCountDisplay(cardId) {
-    const likes = localStorage.getItem(`card${cardId}Likes`);
-    likeCountElements[cardId - 1].textContent = likes;
-  }
+//   function updateLikeCountDisplay(cardId) {
+//     const likes = localStorage.getItem(`card${cardId}Likes`);
+//     likeCountElements[cardId - 1].textContent = likes;
+//   }
 
-  likeButtons.forEach((button, index) => {
-    button.addEventListener("click", () => incrementLikes(index + 1));
-  });
+//   likeButtons.forEach((button, index) => {
+//     button.addEventListener("click", () => incrementLikes(index + 1));
+//   });
 
-  initializeLikes();
-});
+//   initializeLikes();
+// });
