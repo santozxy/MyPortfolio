@@ -1,4 +1,4 @@
-function openTab(evt, nav) {
+function openTab(evt, nav) { // Navegação Tab Bar 
   var i, tabcontent, tablinks;
 
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("experience").style.display = "block";
 });
 
-function typingLetter() {
+function typingLetter() { // Efeito de piscar as letras
   function active(element) {
     const arrLetter = element.innerHTML.split("");
     element.innerHTML = "";
