@@ -2,7 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: initialize 0.7s forwards;
 }
+
 
 .home div {
     flex: 1;
