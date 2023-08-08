@@ -90,7 +90,7 @@
     color: #fff;
 }
 
-.icon-button {
+.button-icon {
     border: 0;
     background-color: var(--quaternary);
     border-radius: 50%;
@@ -105,7 +105,7 @@
     cursor: pointer;
 }
 
-.icon-button:hover {
+.button-icon:hover {
     background-color: #a52a2a;
     color: #FFF;
     transform: scale(1.06);
