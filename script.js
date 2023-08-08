@@ -45,7 +45,7 @@ function downloadPDF() {
 document.getElementById("btn-cv").addEventListener("click", downloadPDF);
 
 document.addEventListener("DOMContentLoaded", function () {
-  const likeButtons = document.querySelectorAll(".icon-button");
+  const likeButtons = document.querySelectorAll(".button-icon");
   const likeCountElements = document.querySelectorAll("#count-like");
 
   // Função para inicializar os contadores de curtidas se não estiverem definidos no localStorage
