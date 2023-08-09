@@ -13,10 +13,9 @@
     /*Cor de titulos principais, icones e layouts*/
     --terciary: #fff;
     /*Cor de titulos*/
-    --quaternary: #c7c7c7;
+    --quaternary: #9b9b9b;
     /*Cor de subtitulos e paragrafos*/
 }
-
 
 * {
     margin: 0;
