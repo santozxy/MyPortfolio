@@ -91,6 +91,10 @@ i {
     animation: translateY .5s infinite alternate;
 }
 
+
+/* Reutilizavéis */
+
+
 @media screen and (max-width:1770px) {
     .social-icons {
         display: none;
