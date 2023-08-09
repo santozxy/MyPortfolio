@@ -2,9 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: initialize 0.7s forwards;
+    animation: initialize 0.5s forwards;
 }
-
 
 .home div {
     flex: 1;
@@ -41,7 +40,6 @@
     box-shadow: 2px 5px 1rem #000000;
 }
 
-
 .home-content h2 span {
     color: var(--secondary);
 }
@@ -69,7 +67,6 @@
     animation: blink 0.5s infinite;
     color: var(--terciary);
 }
-
 
 @keyframes blink {
     from {
