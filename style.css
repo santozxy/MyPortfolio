@@ -42,12 +42,12 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 0.4rem;
+    width: 0.6rem;
 }
 
 ::-webkit-scrollbar-thumb {
     background: var(--secondary);
-    border-radius: 1rem;
+    border-radius: 3px;
 }
 
 
