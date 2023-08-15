@@ -42,3 +42,12 @@ function downloadPDF() {
   link.click();
 }
 document.getElementById("btn-cv").addEventListener("click", downloadPDF);
+
+
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Home") {
+    window.scrollTo(0, 0); // Rolagem para o topo da página
+  } else if (event.key === "End") {
+    window.scrollTo(0, document.body.scrollHeight); // Rolagem para o final da página
+  }
+});
