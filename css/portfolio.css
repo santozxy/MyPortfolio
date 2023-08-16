@@ -43,7 +43,7 @@
     border-radius: .5rem;
     transition: transform ease-in .3s;
     opacity: .8;
-    height: 400px;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
@@ -184,13 +184,13 @@ svg {
     }
 
     .projects img {
-        height: 270px;
+        height: 100%;
         width: 100%;
         opacity: 1;
     }
 
     .projects {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
