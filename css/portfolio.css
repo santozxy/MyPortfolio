@@ -30,100 +30,64 @@
 }
 
 .card {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1rem;
     border-radius: 0.6rem;
     box-shadow: inset 9px -3px 23px -1px rgba(0, 0, 0, 0.6);
 }
 
-
 .card img {
     border-radius: .5rem;
     transition: transform ease-in .3s;
-    opacity: .8;
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-.card img:hover {
-    transform: scale(1.04);
-    opacity: 1;
-}
-
-.card-links {
-    display: flex;
-    justify-content: space-between;
-}
-
-.links {
-    display: flex;
-    justify-content: space-between;
+.links{
+    position: absolute;
+    bottom: 2rem;
+    gap: 1rem;
+    display: none;
+    background-color: rgb(21, 23, 30, .8);
     align-items: center;
-    gap: 1.5rem;
-    padding: 1rem;
+    justify-content: center;
+    color: var(--terciary);
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.card:hover .links{
+    display: flex;
+    bottom: 0;
 }
 
 .links a {
-    color: var(--terciary);
-    transition: transform .3s ease-in-out;
-    opacity: 0.7;
-    border-radius: 100%;
-}
-
-.links i {
-    font-size: 2.5rem;
-}
-
-.disabled {
-    color: #686868;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: .6rem;
+    background-color: var(--secondary);
+    padding: .4rem 1rem;
+    color: #000;
+    border-radius: .5rem;
+    transition: transform .4s ease-in;
 }
 
 .links a:hover {
-    transform: scale(1.06);
-    opacity: 1;
+    transform: scale(1.05);
+    border: 2px solid #fff;
 }
 
-.like {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-.like p {
+.links a i{
     font-size: 1.5rem;
-    color: #fff;
-}
-
-.button-icon {
-    border: 0;
-    background-color: var(--quaternary);
-    border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.25rem;
-    transition: .25s ease;
-    z-index: 1;
-    cursor: pointer;
-}
-
-.button-icon:hover {
-    background-color: #a52a2a;
-    color: #FFF;
-    transform: scale(1.06);
-    opacity: 1;
-}
-
-svg {
-    width: 1em;
-    height: 1em;
 }
 
 .projects-button {
