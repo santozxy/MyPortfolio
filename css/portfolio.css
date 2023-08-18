@@ -81,12 +81,26 @@
     transition: transform .4s ease-in;
 }
 
+.links p{
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: .6rem;
+    background-color: var(--quaternary);
+    padding: .4rem 1rem;
+    color: #000;
+    border-radius: .5rem;
+}
+
 .links a:hover {
     transform: scale(1.05);
     border: 2px solid #fff;
 }
 
-.links a i{
+.links i{
     font-size: 1.5rem;
 }
 
