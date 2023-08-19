@@ -5,7 +5,7 @@
     padding: 2rem 0;
 }
 
-.center p{
+.center p {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -40,30 +40,67 @@
 
 .card img {
     border-radius: .5rem;
-    transition: transform ease-in .3s;
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-.links{
+.links {
     position: absolute;
-    bottom: 2rem;
+    bottom:0;
     gap: 1rem;
     display: none;
-    background-color: rgb(21, 23, 30, .8);
     align-items: center;
     justify-content: center;
     color: var(--terciary);
-    cursor: pointer;
     width: 100%;
     height: 100%;
+    background-color: rgb(21, 23, 30, .8);
 }
 
-.card:hover .links{
+.links::before {
+    content: "";
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    transition: .8s ease-in-out;
+}
+
+.links::after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-radius: 6px;
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    transition: .8s ease-in-out;
+}
+
+.links:hover::before {
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid var(--secondary);
+    border-right: 2px solid var(--secondary);
+}
+
+.links:hover::after {
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid var(--secondary);
+    border-left: 2px solid var(--secondary);
+}
+
+.card:hover .links {
     display: flex;
-    bottom: 0;
 }
 
 .links a {
@@ -79,9 +116,11 @@
     color: #000;
     border-radius: .5rem;
     transition: transform .4s ease-in;
+    cursor: pointer;
+    z-index: 1;
 }
 
-.links p{
+.links p {
     font-size: 1rem;
     font-weight: bold;
     display: flex;
@@ -100,7 +139,7 @@
     border: 2px solid #fff;
 }
 
-.links i{
+.links i {
     font-size: 1.5rem;
 }
 
@@ -148,7 +187,7 @@
 
 @media screen and (max-width:768px) {
 
-    .links{
+    .links {
         padding: 0.5rem;
     }
 
