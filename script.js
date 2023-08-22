@@ -1,3 +1,4 @@
+window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
 // Navegação Tab Bar
 function openTab(evt, nav) {
   const tabcontent = document.getElementsByClassName("tabcontent");
