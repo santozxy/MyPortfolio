@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
-
 :root {
     --primary: #15171e;
     /*Cor de fundo*/
@@ -84,10 +82,6 @@ i {
 .social-icons a:hover {
     animation: translateY .5s infinite alternate;
 }
-
-
-/* Reutilizavéis */
-
 
 @media screen and (max-width:1770px) {
     .social-icons {
