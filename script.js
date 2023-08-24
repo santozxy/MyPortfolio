@@ -1,5 +1,8 @@
 window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-// Navegação Tab Bar
+
+//Mode Colors
+
+// Navegação tab bar na seção About
 function openTab(evt, nav) {
   const tabcontent = document.getElementsByClassName("tabcontent");
   const tablinks = document.getElementsByClassName("tablinks");
@@ -44,8 +47,7 @@ function downloadPDF() {
 }
 document.getElementById("btn-cv").addEventListener("click", downloadPDF);
 
-
-document.addEventListener("keydown", function(event) {
+document.addEventListener("keydown", function (event) {
   if (event.key === "Home") {
     window.scrollTo(0, 0); // Rolagem para o topo da página
   } else if (event.key === "End") {

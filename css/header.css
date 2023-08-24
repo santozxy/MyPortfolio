@@ -1,7 +1,6 @@
 /* Header */
 
 header {
-    animation: initialize 0.4s forwards;
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -39,7 +38,7 @@ header span {
     height: 0;
     width: 10px;
     display: block;
-    border-bottom: 4px solid transparent;
+    border-bottom: .25rem solid transparent;
     transition: 1s;
 }
 
@@ -47,7 +46,7 @@ header span {
     height: 0;
     width: 100%;
     padding: 0;
-    border-bottom: 4px solid var(--secondary);
+    border-bottom: .25rem solid var(--secondary);
 }
 
 .nav li a.active {
@@ -55,10 +54,10 @@ header span {
     height: 0;
     width: 100%;
     padding: 0;
-    border-bottom: 4px solid var(--secondary);
+    border-bottom: .25rem solid var(--secondary);
 }
 
-/* Animações */
+/* ---------------------- Animações ---------------------- */
 
 @keyframes initialize {
     from {
@@ -73,9 +72,11 @@ header span {
 }
 
 
+/* ---------------------- Responsividade ---------------------- */
+
 @media screen and (max-width:1024px) {
 
-    header{
+    header {
         margin-bottom: 2rem;
     }
 
