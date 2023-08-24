@@ -1,6 +1,5 @@
+//Vercel Insights
 window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-
-//Mode Colors
 
 // Navegação tab bar na seção About
 function openTab(evt, nav) {
@@ -19,7 +18,6 @@ function openTab(evt, nav) {
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("experience").style.display = "block";
 });
-
 // Efeito de piscar as letras
 function typingLetter() {
   function active(element) {
@@ -31,7 +29,6 @@ function typingLetter() {
       }, 75 * i);
     });
   }
-
   const title = document.querySelector(".typing");
   active(title);
 }
